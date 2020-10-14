@@ -9,7 +9,7 @@ follower_users = []
 
 class instaBot:
     def __init__(self):
-        self.api = InstagramAPI("utterly_delicious2",'sweetyR2911')
+        self.api = InstagramAPI("username",'password')
         
     def get_likes_list(self,username):
         api = self.api
@@ -89,6 +89,6 @@ class instaBot:
 
 bot = instaBot()
 # get likes of below user
-bot.get_likes_list("pune_food_blogger")
+bot.get_likes_list("target")
 bot.follow(users_list)
 # bot.unfollow()
